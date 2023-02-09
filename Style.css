@@ -1,0 +1,395 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --grey: #f7f6f6;
+  --beige: #fdfaf8;
+}
+
+body {
+  margin: 2rem;
+}
+
+html {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/********************************navigation****************************************/
+
+#index_list ul li {
+  list-style: none;
+  font-size: 1rem;
+  display: block;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  text-decoration-line: underline;
+  margin-bottom: 1rem;
+}
+
+.topNav {
+  word-spacing: 1rem;
+}
+.logo {
+  text-decoration: none;
+}
+
+nav a {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+/********************************tekst****************************************/
+
+h1 span {
+  display: inline-block;
+  transform: scaleX(-1);
+  color: red;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+
+h3 {
+  letter-spacing: -0.02rem;
+  line-height: 1.2;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  text-decoration: none;
+}
+
+h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+h1,
+h2 {
+  margin-bottom: 1rem;
+  margin-top: 1em;
+}
+
+/****************************************Padding***************************************/
+.padding1 {
+  padding: 1rem;
+}
+
+.padding2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.padding_top2 {
+  padding-top: 2rem;
+}
+
+.padding_bottom2 {
+  padding-bottom: 2rem;
+}
+
+.padding_bottom1 {
+  padding-bottom: 0.7rem;
+}
+
+/****************************************Margin***************************************/
+.margin2 {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.margin_top1 {
+  margin-top: 1rem;
+}
+.margin_bottom1 {
+  margin-bottom: 1rem;
+}
+
+.margin_top2 {
+  margin-top: 2rem;
+}
+.margin_bottom2 {
+  margin-bottom: 2rem;
+}
+
+.margin_bottom3 {
+  margin-bottom: 3rem;
+}
+
+.margin_top4 {
+  margin-top: 4rem;
+}
+.margin_bottom4 {
+  margin-bottom: 4rem;
+}
+
+/****************************************Kategorier***************************************/
+
+.kategoriliste a {
+  display: block;
+  text-decoration: none;
+  padding: 2em;
+  background-color: beige;
+  margin: 1rem;
+  border-radius: 2px;
+}
+
+/****************************************produktliste***************************************/
+
+article {
+  background: var(--grey);
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.subtle {
+  color: #787778;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+.OG_pris {
+  font-size: 1.2rem;
+}
+
+.forpris {
+  text-decoration: line-through;
+  text-decoration-thickness: 1.5px;
+  padding-bottom: 2%;
+  font-family: Arial;
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.tilbud .tb_pris {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: rgb(255, 247, 0);
+  margin-bottom: 0;
+  display: flex;
+  align-items: flex-start;
+  font-size: 1.2rem;
+}
+
+#produkt p {
+  font-size: 1.5rem;
+}
+
+/* tilbuds class */
+
+.produkt_list article div.tilbud {
+  display: none;
+}
+
+.produkt_list article.udsalg div.tilbud {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.produkt_list article.udsalg p.OG_pris {
+  display: none;
+}
+
+/* sold out, med class
+
+.produkt_list article.sold_out::before {
+  content: "Sold Out";
+  position: absolute;
+  background: rgb(0, 0, 0);
+
+  color: #ffffff;
+  padding: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+
+  width: fit-content;
+}
+
+.produkt_list article.sold_out img {
+  opacity: 50%;
+}
+ */
+/* sold out med favorit look */
+.image {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.image_overlay {
+  display: none;
+}
+
+.produkt_list article.sold_out div div.image_overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.none {
+  display: none;
+}
+
+/****************************************Produkt***************************************/
+
+select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid grey;
+  border-radius: 10px;
+  color: var(--input-color);
+  height: 2.5rem;
+  width: 70%;
+  font-weight: bold;
+}
+
+label {
+  padding-top: 0.3rem;
+  font-size: 1.2rem;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  padding-top: 2rem;
+}
+
+.form {
+  display: flex;
+  gap: 12%;
+}
+
+.purchase {
+  background: var(--grey);
+  padding: 1rem;
+}
+
+.purchase h2 {
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  background-color: rgb(246, 241, 241);
+  border: 2px solid grey;
+  color: var(--input-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.produktinfo ul li {
+  text-decoration-line: none;
+  margin-left: 5%;
+  padding: 2%;
+}
+
+.for {
+  font-family: monospace;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.pris {
+  font-size: 2rem;
+  font-weight: bold;
+}
+/****************************************media***************************************/
+
+@media (min-width: 768px) {
+  .topNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav {
+    gap: 20%;
+  }
+
+  /* grids */
+  .kategoriliste {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.2rem;
+    text-align: center;
+  }
+
+  .produkt_list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+
+  .tshirt_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  /* produkt layout desktop */
+
+  .form {
+    display: block;
+    gap: 2rem;
+  }
+
+  label {
+    padding-right: 70%;
+    margin-left: 0.2rem;
+    margin-top: 5rem;
+  }
+
+  select {
+    margin-top: 0.7rem;
+    margin-bottom: 2rem;
+  }
+
+  /*index layout*/
+  .front img {
+    padding-top: 0rem;
+  }
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sportstøj</title>
+</head>
+
+<body>
+
+    <header class="topNav">
+        <a class="logo" href="index.html">
+            <h1 class="padding_bottom1">Fashion<span>R</span>Us</h1>
+        </a>
+        <nav>
+            <a href="kategori.html">Kategorier</a>
+            <a href="produktliste.html">Brands</a>
+            <a href="produktliste.html">Sæsoner</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Sportstøj</h2>
+        <div class="produkt_list">
+
+            <template id="product_card_template">
+                <Article class="product_card">
+                    <a href="produkt.html">
+                        <div>
+                            <div class="image">
+                                <img src="https://kea-alt-del.dk/t7/images/webp/1000/1534.webp" alt="puma t-shirt">
+                                <div class="image_overlay">
+                                    <h4>Sold Out</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Black Leaping Cat Puma T-shirt</h3>
+                        <p class="subtle"> <span class="type">T-shirts</span> // <span class="brand">Puma</span></p>
+                        <p class="OG_pris"></p>
+                        <div class="tilbud">
+                            <p class="forpris"></p>
+                            <p class="tb_pris"></p>
+                        </div>
+                    </a>
+                </Article>
+            </template>
+
+
+            <!--
+            <Article class="product_card"><a href="produkt.html">
+                    <div>
+                        <div class="image">
+                            <img src="https://kea-alt-del.dk/t7/images/webp/1000/1534.webp" alt="puma t-shirt">
+                            <div class="image_overlay">
+                                <h4>Sold out</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Black Leaping Cat Puma T-shirt</h3>
+                    <p class="subtle"> <span class="type">T-shirts</span> // <span class="brand">Puma</span></p>
+                    <div class="tilbud">
+                        <p class="forpris">DKK 400</p>
+                        <p class="tb_pris">DKK 300</p>
+                    </div>
+                    <p class="OG_pris">DKK 400</p>
+                </a>
+            </Article>
+
+            <Article class="product_card udsalg"><a href="produkt.html">
+                    <div>
+                        <div class="image">
+                            <img src="https://kea-alt-del.dk/t7/images/webp/1000/1534.webp" alt="puma t-shirt">
+                            <div class="image_overlay none">
+                                <h4>Sold out</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Black Leaping Cat Puma T-shirt</h3>
+                    <p class="subtle"> <span class="type">T-shirts</span> // <span class="brand">Puma</span></p>
+                    <div class="tilbud">
+                        <p class="forpris">DKK 400</p>
+                        <p class="tb_pris">DKK 300</p>
+                    </div>
+                    <p class="OG_pris">DKK 400</p>
+                </a>
+            </Article>
+
+            <Article class="product_card sold_out"><a href="produkt.html">
+                    <img src="https://kea-alt-del.dk/t7/images/webp/1000/1534.webp" alt="puma t-shirt">
+                    <h3>Black Leaping Cat Puma T-shirt</h3>
+                    <p class="subtle"> <span class="type">T-shirts</span> // <span class="brand">Puma</span></p>
+                    <div class="tilbud none">
+                        <p class="forpris">DKK 400</p>
+                        <p class="tb_pris">DKK 300</p>
+                    </div>
+                    <p class="OG_pris">DKK 400</p>
+                </a>
+            </Article>
+
+            <Article class="product_card sold_out udsalg"><a href="produkt.html">
+                    <img src="https://kea-alt-del.dk/t7/images/webp/1000/1534.webp" alt="puma t-shirt">
+                    <h3>Black Leaping Cat Puma T-shirt</h3>
+                    <p class="subtle"> <span class="type">T-shirts</span> // <span class="brand">Puma</span></p>
+                    <div class="tilbud none">
+                        <p class="forpris">DKK 400</p>
+                        <p class="tb_pris">DKK 300</p>
+                    </div>
+                    <p class="OG_pris">DKK 400</p>
+                </a>
+            </Article>
+
+            <Article class="product_card"><a href="produkt.html">
+                    <div>
+                        <div class="image">
+                            <img src="https://kea-alt-del.dk/t7/images/webp/1000/1534.webp" alt="puma t-shirt">
+                            <div class="image_overlay">
+                                <h4>Sold out</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Black Leaping Cat Puma T-shirt</h3>
+                    <p class="subtle"> <span class="type">T-shirts</span> // <span class="brand">Puma</span></p>
+                    <div class="tilbud none">
+                        <p class="forpris">DKK 400</p>
+                        <p class="tb_pris">DKK 300</p>
+                    </div>
+                    <p class="OG_pris">DKK 400</p>
+                </a>
+            </Article>
+
+            <Article class="product_card"><a href="produkt.html">
+                    <div>
+                        <div class="image">
+                            <img src="https://kea-alt-del.dk/t7/images/webp/1000/1534.webp" alt="puma t-shirt">
+                            <div class="image_overlay">
+                                <h4>Sold out</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Black Leaping Cat Puma T-shirt</h3>
+                    <p class="subtle"> <span class="type">T-shirts</span> // <span class="brand">Puma</span></p>
+                    <div class="tilbud">
+                        <p class="forpris">DKK 400</p>
+                        <p class="tb_pris">DKK 300</p>
+                    </div>
+                    <p class="OG_pris">DKK 400</p>
+                </a>
+            </Article>
+-->
+
+
+        </div>
+    </main>
+    <script src="js/productlist.js"></script>
+</body>
+
+</html>
